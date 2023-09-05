@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash it</title>
+</head>
+<body>
+    <label>Input: </label>
+    <input type="text" id="mainInput" onchange="updateHash()"> <br/>
+    <span>Hash Layer: </span>
+    <button onclick="removeSelect()">-</button>
+    <span id="hashLayerTxt">0</span>
+    <button onclick="addNewSelect()">+</button> <br/>
+    <button onclick="randomHash()">Random Hash</button>
+    <div id="list">
+
+    </div>
+    <script src="./scripts/sha256.min.js"></script>
+    <script src="./scripts/md5.min.js"></script>
+    <script src="./scripts/sha1.min.js"></script>
+    <script src="./scripts/sha512.min.js"></script>
+    <script src="./scripts/sha3.min.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
